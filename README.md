@@ -1,7 +1,7 @@
 # AMGL
 Accurate prediction of cancer survival is essential for personalized treatment planning and clinical decision-making. However, existing multimodal approaches often struggle to model long-range dependencies in pathology slides and to balance the contribution of heterogeneous modalities effectively. To address these challenges, we propose an Adaptive Multimodal Graph Learning Framework with Dynamic Neighborhood Sampling (AMGL), which effectively integrates pathology slides, genomic profiles, and clinical records for cancer survival prediction. Specifically, we first extract features from each modality and construct graphs separately. Then, we introduce a Neighborhood Sampling-based Jumping Knowledge (NSJK) module. It captures key node information and long-range dependencies in pathology slide graphs by adaptively sampling neighborhoods, dynamically adjusting the receptive field to emphasize informative neighbors, and learning to fuse multilevel representations across graph layers via dynamic jumping knowledge. Finally, a Multimodal Graph Feature Fusion (MGFF) module is designed to incorporate heterogeneous modality features using spatial and channel attention blocks together with a cross-modal fusion block. Experiments on six TCGA cancer datasets demonstrate that AMGL achieves a 3.6\% average improvement in C-index compared to the state-of-the-art method. These results confirm the effectiveness and robustness of AMGL for multimodal cancer survival prediction.
 <div align="center">
-  <img src="image.png" alt="AMGL Framework Overview" width="800">
+  <img src="fig1.png" alt="AMGL Framework Overview" width="800">
 </div>
 
 ## Framework Overview
